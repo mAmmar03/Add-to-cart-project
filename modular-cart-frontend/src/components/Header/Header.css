@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 5%; /* Matches the main content fluid margins */
+  background-color: #111827; /* Deep premium dark header */
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header-logo h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff; /* Gradient hata kar solid white kar diya taake bug khatam ho jaye */
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 50px; /* Pill styled premium button */
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.cart-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.cart-btn:active {
+  transform: translateY(1px);
+}
+
+.cart-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.cart-text {
+  margin-right: 4px;
+}
+
+.cart-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef4444; /* Premium red badge */
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.5);
+}
